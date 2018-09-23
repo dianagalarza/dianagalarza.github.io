@@ -15,7 +15,7 @@ body {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.5rem;
+  padding: 0.25rem 1.5rem;
 }
 
 .content-section {
@@ -28,7 +28,7 @@ body {
 }
 
 .content-section-heading h3 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -142,7 +142,7 @@ h6 {
 }
 
 .masthead h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }

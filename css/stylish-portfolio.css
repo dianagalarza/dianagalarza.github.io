@@ -28,7 +28,7 @@ body {
 }
 
 .content-section-heading h3 {
-  font-size: 0.75rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
 }
 
@@ -84,7 +84,7 @@ h6 {
 .scroll-to-top i {
   font-weight: 800;
 }
-
+@media (min-width: 992px) {
 .split {
   height: 100%;
   width: 50%;
@@ -92,7 +92,7 @@ h6 {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 
 /* Control the left side */
@@ -107,8 +107,9 @@ h6 {
 
 /* Control the right side */
 .right {
-  right: -75%;
-  top: 75% !important;
+  right: -73%;
+  top: 63% !important;
+  padding: 60px;
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -117,13 +118,17 @@ h6 {
   top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  /*text-align: center;*/
+}
 }
 
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+.centered {
+  /*position: absolute;*/
+  /*top: 75%;
+  left: 50%;*/
+  transform: translate(-50%, -50%);
+  /*text-align: center;*/
+  color: black;
 }
 
 .masthead {
@@ -134,17 +139,31 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  /*background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/selfie.jpg");
+/*  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/selfie.jpg");
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/selfie.jpg");*/
-  background-position: top;
+/*  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .masthead h1 {
   font-size: 2rem;
   margin: 0;
   padding: 0;
+  color: #black;
+}
+h3, em {
+  font-style: none;
+  text-align: left;
+  font-family: Source Sans Pro;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    line-height: 1em;
+    color: #a3a3a3;
+
 }
 
 @media (min-width: 992px) {
@@ -152,7 +171,9 @@ h6 {
     height: 100vh;
   }
   .masthead h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
+    color: #333;
+    text-align: left;
   }
 }
 
@@ -178,6 +199,10 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.fixed-top {
+  background-color: white;
 }
 
 .sidebar-nav li.sidebar-nav-item a {
@@ -374,25 +399,26 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #333 !important;
+  border-color: #333 !important;
   color: #fff !important;
+
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #lightgray !important;
+  /*border-color: #lightgray !important;*/
 }
 
 .btn-secondary {
   background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
+  /*border-color: #ecb807 !important;*/
   color: #fff !important;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
+  /*border-color: #ba9106 !important;*/
 }
 
 .btn-dark {
@@ -403,8 +429,14 @@ a:hover, a:focus, a:active {
   -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
+  border-radius: 2.25em;
+  padding-top: 1em;
+    padding-right: 1.44em;
+    padding-right: calc(1.44em - .28em);
+    padding-bottom: 1em;
+    padding-left: 1.44em;
 }
-
+button:focus {outline:0;}
 .bg-primary {
   background-color: #1D809F !important;
 }

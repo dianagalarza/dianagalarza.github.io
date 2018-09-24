@@ -117,18 +117,39 @@ h6 {
   position: absolute;
   top: 50%;
   left: 25%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   /*text-align: center;*/
 }
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
+  .left {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/selfie.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/selfie.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .centered {
   /*position: absolute;*/
   /*top: 75%;
   left: 50%;*/
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, 0%);*/
   /*text-align: center;*/
   color: black;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+ .btn {
+    font-size: 10px !important;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  border-radius: 2.25em;
+  padding-top: 1em;
+    padding-right: 1.44em;
+    padding-right: calc(1.44em - .28em);
+    padding-bottom: 1em;
+    padding-left: 1.44em;
 }}
 
 .masthead {
@@ -137,8 +158,8 @@ h6 {
   display: table;
   width: 100%;
   height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  /*padding-bottom: 8rem;*/
 /*  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/selfie.jpg");
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/selfie.jpg");*/
 /*  background-position: top;
@@ -147,7 +168,7 @@ h6 {
 }
 
 .masthead h1 {
-  font-size: 2rem;
+  font-size: 33px;
   margin: 0;
   padding: 0;
   color: #black;
@@ -156,7 +177,7 @@ h3, em {
   font-style: none;
   text-align: left;
   font-family: Source Sans Pro;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase;

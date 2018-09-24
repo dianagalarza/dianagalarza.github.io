@@ -32,9 +32,7 @@
   $('body').scrollspy({
     target: '#sideNav'
   });
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
+
 
   // Scroll to top button appear
   $(document).scroll(function() {

@@ -129,7 +129,11 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.right {
+    margin-top: 42px !important;
+  }
 .centered {
+  
   /*position: absolute;*/
   /*top: 75%;
   left: 50%;*/
@@ -177,7 +181,7 @@ h3, em {
   font-style: none;
   text-align: left;
   font-family: Source Sans Pro;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase;
@@ -399,7 +403,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #808080;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -407,7 +411,7 @@ footer.footer .social-link {
 }
 
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #212529;
   text-decoration: none;
 }
 
@@ -421,24 +425,24 @@ a:hover, a:focus, a:active {
 
 .btn-primary {
   background-color: #333 !important;
-  border-color: #333 !important;
+  /*border-color: #333 !important;*/
   color: #fff !important;
 
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #lightgray !important;
+  background-color: #212529 !important;
   /*border-color: #lightgray !important;*/
 }
 
 .btn-secondary {
-  background-color: #ecb807 !important;
+  background-color: #808080 !important;
   /*border-color: #ecb807 !important;*/
   color: #fff !important;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
+  background-color: #212529 !important;
   /*border-color: #ba9106 !important;*/
 }
 
@@ -447,6 +451,7 @@ a:hover, a:focus, a:active {
 }
 
 .btn {
+  border: none !important;
   -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
@@ -467,5 +472,5 @@ button:focus {outline:0;}
 }
 
 .text-secondary {
-  color: #ecb807 !important;
+  color: #fff !important;
 }

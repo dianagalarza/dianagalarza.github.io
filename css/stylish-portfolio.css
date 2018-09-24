@@ -470,7 +470,9 @@ button:focus {outline:0;}
 .bg-primary {
   background-color: #808080 !important;
 }
-
+.bg-gray {
+  background-color: #f8f9fa!important;
+}
 .text-primary {
   color: #1D809F !important;
 }

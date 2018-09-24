@@ -386,7 +386,7 @@ h3, em {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -403,7 +403,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #808080;
+  background-color: #343a40;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -420,7 +420,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #155d74;
+  color: ##343a40;
 }
 
 .btn-primary {

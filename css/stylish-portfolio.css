@@ -358,14 +358,16 @@ h3, em {
   margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+.portfolio-item .caption .caption-content h2 span{
+  font-size: 1.4rem;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.portfolio-item .caption .caption-content p {
+.portfolio-item .caption .caption-content p span{
   font-weight: 300;
   font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 992px) {
@@ -381,9 +383,9 @@ h3, em {
   .portfolio-item .caption .caption-content {
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
-    margin-left: 5rem;
+    margin-left: 2rem;
     margin-right: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   .portfolio-item img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;

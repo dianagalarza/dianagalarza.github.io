@@ -17,32 +17,18 @@ body,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .nav {
   display: flex;
   gap: 1rem;
-  position: sticky;
-  left: 50%;
-  transform: translate(-50%);
-  margin: 2rem;
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav {
-    position: sticky;
-    margin: 2rem;
-    display: block;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .message {
@@ -50,5 +36,36 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
-  border-color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.message .text-animation {
+  transition: transform 1s ease-in-out;
+}
+
+.message .text-animation:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .message {
+    padding: 1rem;
+  }
+
+  .message .text-animation:hover {
+    transform: none;
+  }
 }

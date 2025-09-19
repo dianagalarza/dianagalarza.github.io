@@ -13,8 +13,10 @@ export default function Message() {
   }, [messages.length]);
 
   return (
-    <div className="message">
-      <h2>{messages[currentMessageIndex]}</h2>
+    <div className="message" aria-live="polite" role="status">
+      <div className="text-animation">
+        <h2>{messages[currentMessageIndex]}</h2>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,11 @@ export default function Header() {
     <div className="header">
       <div className="nav">
         <div>
-          <a target="_blank" href="https://www.linkedin.com/in/dianamgalarza/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/dianamgalarza/"
+            aria-label="LinkedIn profile"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -17,7 +21,11 @@ export default function Header() {
           </a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/dianagalarza">
+          <a
+            target="_blank"
+            href="https://github.com/dianagalarza"
+            aria-label="GitHub profile"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -34,6 +42,7 @@ export default function Header() {
           <a
             target="_blank"
             href="https://docs.google.com/document/d/1qLFyeq9EHAK1yoGbSlKsfGm2EKQisCMJXYYNJhoi3tM/edit?usp=sharing"
+            aria-label="Resume"
           >
             <svg
               fill="#000000"

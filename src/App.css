@@ -1,75 +1,54 @@
+html,
+body,
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  /* text-align: center; */
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.message {
-  display: grid;
-  place-items: center;
-  height: 100vh;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* position: relative; */
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav {
-  position: absolute;
+  display: flex;
+  gap: 1rem;
+  position: sticky;
   left: 50%;
   transform: translate(-50%);
+  margin: 2rem;
 }
 
 @media (max-width: 600px) {
   .header {
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items */
-    align-items: center; /* Align items in the center */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav {
-    position: static; /* Reset positioning */
-    transform: none; /* Remove centering transform */
-    margin-top: 0.5rem; /* Add spacing between the emoji and the link */
+    position: sticky;
+    margin: 2rem;
+    display: block;
   }
+}
+
+.message {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: white;
 }
